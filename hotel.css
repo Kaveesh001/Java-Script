@@ -1,0 +1,300 @@
+h1{
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6),rgb(165, 176, 209,0.7));
+    height: 1.9em;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+#heading_descriptor{
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    font-weight: bold;
+}
+#heading_comment{
+    color: rgb(255, 255, 255);
+    font-size: 1.8em; 
+}
+body{
+    background-image: url(OBLU-SELECT-Lobigili-Aerial.jpg);
+    background-color: rgba(255, 255, 255, 0.3);
+    align-items: center;
+}
+#live_bar{
+    height: 7em;
+    border: 2px solid rgb(19, 7, 66);
+    /* margin-bottom: 0.5em; */
+    position: fixed;
+    bottom: 5.2em;
+    left: 3%;
+    width: 95%;
+    display: flex;
+    text-align: center;
+}
+#live_bar_column{
+    width: 25%;
+    /* padding: 1em; */
+    background-color: rgba(200, 212, 223, 0.8);
+    font-size: larger;
+    border: white ridge ;
+    border-width: 7px;
+}
+#live_bar_subcolumn{
+    display: flex; 
+    flex-direction: column; 
+    font-size:small;
+    font-weight: bold;
+    /* padding:5px 5px 0px 5px;  */
+}
+#live_bar_column_topic{
+    font-size: larger;
+    font-weight: bold;
+}
+#live_bar_2{
+    height: 5em;
+    border: 2px solid rgb(19, 7, 66);
+    display: flex;
+    position: fixed;
+    left: 3%;
+    bottom: 0em;
+    width: 95%;
+    text-align: center;
+}
+#live_bar_2_column{
+    width: 50%;
+    padding: auto;
+    background-color: rgba(200, 212, 223, 0.8);
+    font-size: larger;
+    border: white ridge ;
+    border-width: 7px;
+}
+#form_canvas{
+    height: 3400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(194, 180, 180, 0.6),rgba(83, 87, 100, 0.33));
+    margin-bottom: 400px;
+    left: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+legend{
+    font-size: 2em;
+}
+fieldset{
+    width: 98%;
+    margin-top: 30px;
+}
+form{
+    width: 98%;
+}
+input{
+    width: 60%;
+    font-size: 2em;
+    background-color: rgb(255, 255, 255);
+    margin: 8px 12px 12px 6px;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    margin-top: 1px;
+    border: solid 1px black;
+}
+/* #input:hover{
+    height: 60px;
+    background-color: #911414;
+} */
+label{
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 6px;
+    display: block;
+    /* margin-bottom: 1000px; */
+}
+#gender{
+    float: left;
+}
+input[type="radio"] {
+    margin-right: 8px;
+    margin-left: 50px;
+}
+input[type="text"] {
+    text-transform: uppercase;
+  }
+#roomChoice{
+    display: flex;
+}
+#formPhrase{
+    font-size: 1.9em;
+    margin-top: 20px;
+}
+#accessibiltyBox{
+    display: flex;
+    flex-direction: column; 
+    font-size: 2em;
+}
+#customSpecialNeeds{
+    width: 60%;
+    height: 150px;
+    font-size: 2em;
+}
+#bookButton{
+    width: 330px;
+    background-color: rgb(196, 50, 50);
+} 
+#bookButton:hover {
+    background-color: #911414;
+}
+#adventure_form{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    margin-bottom: 8px;
+}  
+select,button{
+    padding: 8px;
+    margin-bottom: 16px;
+}
+#form_canvas_adventure{
+    height: 1700px;
+    width: 100%;
+    background-image: linear-gradient(rgba(208, 221, 27, 0.4),rgba(216, 230, 27, 0.4));
+}
+#submit{  
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 40%;
+    height: 60px;
+    font-size: 1.9em;
+    /* align-self: center; */
+}
+#submit:hover{
+    font-size: 32px;
+}
+#petComment{
+    font-size: 2em;
+}
+#form2_topic{
+    text-align: center;
+    background-image: linear-gradient(rgba(208, 221, 27, 0.8),rgba(216, 230, 27, 0.4));
+    height: 1.9em;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}  
+#roomBox{
+    margin: 40px 40px 40px 40px;
+}
+#genderRadioButtons{
+    position: relative;
+    right: 30%;
+}
+#binaryRadioButtons{
+    position: relative;
+    right: 30%;
+}
+#pets{
+    border: black solid 5px;
+}
+#singleBox,#doubleBox,#tripleBox{ 
+    height: 10px;
+    margin: 0px 4px 0px 4px;
+    font-size: medium;
+    padding: auto;
+}  
+#localAdults,#foreignAdults{
+    height:10px;
+    margin: 0px 4px 0px 4px;
+    font-size: medium;
+    padding: auto;
+}
+#localChildren,#foreignChildren{
+    height:10px;
+    margin: 0px 4px 0px 4px;
+    font-size: medium;
+    padding: auto;
+}
+#totalDivers,#totalSafari{
+    font-size: medium;
+}
+/*#accessibilityRequirements,#assistance{
+    display: flex;
+    flex-flow: column;
+}   */
+#accessibiltyBox{
+    height: 250px;
+    flex: auto;
+}
+#binaryRadioButtonsForDivingInstructor{
+    position: relative;
+    right: 30%;
+}
+@media(max-width:500px){
+body{
+    width: 100%;
+}
+h1{
+    font-size: 1.8em;
+}
+#heading_descriptor{
+    font-size: 1.3em;
+}
+#heading_comment{
+    font-size: 1.2em;
+}
+#live_bar{
+    font-size: 1.2em;
+    margin-left: 0px;
+    height: 10em;
+}
+#live_bar_column{
+    font-size: 1.2em;
+}
+#live_bar_column_topic{
+    font-size: 0.9em;
+}    
+#live_bar_subcolumn{
+    font-size: 1.2em;
+}
+#form_canvas{
+    height: 3200px;
+}
+legend{
+    font-size: 1.3em;
+}
+fieldset{
+    width: 98%;
+    margin-top: 30px;
+}
+form{
+    width: 98%;
+}
+input{
+    font-size: 1.2em;
+}
+label{
+    font-size: 1.2em;
+}
+#formPhrase{
+    font-size: 1.2em;
+}
+#accessibiltyBox{
+    font-size: 1.2em;
+}
+#textarea{
+    height: 100px;
+    width: 95%;
+}
+#accessibiltyBox{
+    height: auto;
+}
+#form2_topic{
+    font-size: 1.4em;
+}
+}
+
+

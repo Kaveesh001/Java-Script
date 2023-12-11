@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="hotel.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+</head>
+<body>              
+    <h1>Hotel Room Reservation</h1>
+    <p id="heading_descriptor">Reserve the wonderful room you deserve at Serenity Colmbo!</p>
+    <p id="heading_comment">Please fill out the following Registration Form below to reserve your room.</p>
+    <p>
+        <section id="form_canvas">
+            <form id="reservationForm">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullName">Full Name</label><br>
+                    <input type="text" placeholder="First Name" name="fullName" id="fullName" ><!--required--><br>
+                    <label for="phoneNumber">Phone Number</label><br>
+                     <input type="tel" placeholder="(+94)000000000" name="phoneNumber" id="phoneNumber" maxlength="10"> <!--required--><br> 
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="johndoe@gmail.com" name="email" id="email" ><!--required--><br>
+                    <label for="adress">Adress</label><br>
+                    <input type="text" name="adress" id="adress" ><!--required--><br>
+                    <label for="nationality">Nationality</label><br>
+                    <input type="text" name="nationality" id="nationality" ><!--required--><br>
+                    <label for="dateOfBirth">Date of Birth</label><br>
+                    <input type="date" name="dateOfBirth" id="dateOfBirth"> <!--required--><br>
+                    <label for="gender">Gender</label><br>
+                    <section>
+                        <section id="genderRadioButtons">
+                            <label id="genderLabels">
+                                <input type="radio" name="gender" value="male">
+                                Male
+                            </label>
+                        </section>
+                        <section id="genderRadioButtons">
+                            <label id="genderLabels">
+                                <input type="radio" name="gender" value="female">
+                                Female
+                            </label>
+                        </section>
+                        <section id="genderRadioButtons">
+                            <label id="genderLabels">
+                                <input type="radio" name="gender" value="other">
+                                Other
+                            </label>
+                        </section>
+                    </section>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Identification</legend>
+                    <label for="passportNo">Passport Number</label><br>
+                    <input type="text" name="passportNo" id="passportNo"><br>
+                    <label for="issuingCountry">Issuing Country</label><br>
+                    <input type="text" name="issuingCountry" id="issuingCountry"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Emergency Contact</legend>
+                    <label for="emergencyContact">Name of Person to Contact in case of Emergency</label><br>
+                    <input type="text" name="emergencyContact" id="emergencyContact"><br>
+                    <label for="relationship">Relationship to the Guest</label><br>
+                    <input type="text" name="relationship" id="relationship" placeholder="Spouse,Child,Parent etc."><br>
+                    <label for="contact">Contact Number</label><br>
+                    <input type="tel" name="contact" id="contact"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Reservation Details</legend>
+                    <label for="checkInDate"></label><br>
+                    <input type="date" name="checkInDate" id="checkInDate"><br>
+                    <label for="checkOutDate">Check Out Date</label><br>
+                    <input type="date" name="checkOutDate" id="checkOutDate"><br>
+                    <label for="roomTypePreference">Room Type Preference</label><br>
+                    <section id="roomChoice">
+                        <section id="roomBox">
+                            <label for="singleRoom">Single Room:</label>
+                            <select id="singleRoom" name="singleRoom">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </section>
+                        <section id="roomBox">
+                            <label for="doubleRoom">Double Room:</label>
+                            <select id="doubleRoom" name="doubleRoom">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </section>
+                        <section id="roomBox">
+                            <label for="tripleRoom">Triple Room:</label>
+                            <select id="tripleRoom" name="tripleRoom">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </section>
+                    </section>
+                    <label id="formPhrase" for="instructor">Will children under 5 years of age be accompannying you?</label><br>
+                    <label>
+                        <section id="binaryRadioButtons">
+                            <input type="radio" name="instructor" value="yes">Yes<br>
+                        </section>
+                        <section id="binaryRadioButtons">
+                            <input type="radio" name="instructor" value="no">No<br>
+                        </section>
+                    </label>   
+                    <label id="formPhrase" for="instructor">Will you be needing an Extra Bed?</label><br>
+                    <label>
+                        <section id="binaryRadioButtons">
+                            <input type="radio" name="extraBed" value="yesBed">Yes<br>
+                        </section>
+                        <section id="binaryRadioButtons">
+                            <input type="radio" name="extraBed" value="noBed">No<br>
+                        </section>
+                    </label> 
+                </fieldset>    
+                <!--  
+                <fieldset>
+                    <legend>Additional Requests/Services</legend> 
+                </fieldset>     -->
+                <fieldset>
+                    <legend>Special Preferences/Requirements</legend>
+                    <label id="formPhrase" for="accessibility">Dear Guest, we strive to ensure your stay with us is comfortable and tailored to your needs. Do you have any special requirements or preferences that we should be aware of to enhance your experience during your stay? </label><br>
+                    <section id="accessibiltyBox">  
+                        <section id="accessibiltyBoxOptions">Dietary Restrictions or Preferences <input type="checkbox" name="dietaryRestrictions" id="dietaryRestrictions" value="dietaryRestrictions">
+                        </section>                      
+                        <section id="accessibiltyBoxOptions">Accessibility Requirements                                     
+                            <input type="checkbox" name="accessibilityRequirements" id="accessibilityRequirements" value="accessibilityRequirements">
+                        </section>
+                        <section id="accessibiltyBoxOptions">Any Specific Assistance Needed
+                            <input type="checkbox" name="assistance" id="assistance" value="assistance">
+                        </section>
+                        <section id="accessibiltyBoxOptions">I Don't Have any Special Needs
+                            <input type="checkbox" name="noSpecialNeeds" id="noSpecialNeeds" value="noSpecialNeeds">
+                        </section>
+                        <section id="accessibiltyBoxOptions"></section>    
+                    </section>
+                    <label for="pets">Will you be Bringing any Pets or Support Animals?</label><br>
+                    <label>
+                        <section id="binaryRadioButtons">
+                        <input type="radio" name="pets" id="pets" value="Yes">Yes<br>
+                        </section>
+                        <section id="binaryRadioButtons">
+                        <input type="radio" name="pets" id="pets" value="No">No<br>
+                        </section>
+                    </label>
+                    <label for="customSpecialNeeds">Any other Special Requirements or Preferences</label><br>
+                    <textarea id="textarea" name="customSpecialNeeds" id="customSpecialNeeds" placeholder="Please let us know if you have any other special requiremnts or needs." rows="4" cols="10"></textarea><br>
+                    <label for="fullName">If you have any Promo Code, paste it here.</label><br>
+                    <input type="text" placeholder="Promo Code" name="fullName" id="fullName" ><!--required--><br>
+                </fieldset>    
+                <button id="bookButton"><img src="book now button.png" alt="Book Now Button"></button>
+            </form>
+        </section>
+    <h1 id="form2_topic">Adventure Booking Form</h1>
+        <section id="form_canvas_adventure">
+            <form id="adventureForm">          
+                <fieldset>
+                    <legend>Diving</legend>
+                    <label for="participantsLocalAdultDiving">Select number of Local Adults:</label>
+                    <select id="participantsLocalAdultDiving" name="participantsLocalAdultDiving">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <label for="participantsForeignAdultDiving">Select number of Foreign Adults:</label>
+                    <select id="participantsForeignAdultDiving" name="participantsForeignAdultDiving">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                    <label for="participantsLocalChildDiving">Select number of Local Children:</label>
+                    <select id="participantsLocalChildDiving" name="participantsLocalChildDiving">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <label for="participantsForeignChildDiving">Select number of Foreign Children:</label>
+                    <select id="participantsForeignChildDiving" name="participantsForeignChildDiving">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                    <label id="formPhrase" for="instructor">Do you need an Instructor? </label><br>
+                    <label>
+                        <section id="binaryRadioButtonsForDivingInstructor">
+                            <input type="radio" name="instructor" value="yes">Yes<br>
+                        </section>
+                        <section id="binaryRadioButtonsForDivingInstructor">
+                            <input type="radio" name="instructor" value="no">No<br>
+                        </section>
+                    </label>
+                </fieldset>   
+                <fieldset>
+                    <legend>Safari</legend>
+                    <p id="heading_comment">The Safari adventure is free of charge and presented to you as a compliment!</p>
+                    <label for="participantsAdultSafari">Select number of Local Adults:</label>
+                    <select id="participantsLocalAdultSafari" name="participantsLocalAdultSafari">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <label for="participantsAdultSafari">Select number of Foreign Adults:</label>
+                    <select id="participantsForeignAdultSafari" name="participantsForeignAdultSafari">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <label for="participantsLocalChildSafari">Select number of Local Children:</label>
+                    <select id="participantsLocalChildSafari" name="participantsLocalChildSafari">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <label for="participantsForeignChildSafari">Select number of Foreign Children:</label>
+                    <select id="participantsForeignChildSafari" name="participantsForeignChildSafari">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                    <label id="formPhrase" for="guide">Would you require the Servic of a Tour Guide? </label><br>
+                    <label>
+                        <section id="binaryRadioButtons">
+                            <input type="radio" name="instructor" value="yes">Yes<br>
+                        </section>
+                        <section id="binaryRadioButtons">
+                            <input type="radio" name="instructor" value="no">No<br>
+                        </section>
+                    </label>
+                </fieldset>     
+                <button id="submit" type="submit">Submit</button>               
+            </form>
+        </section>
+    </p>
+    <p>
+    <section id="live_bar">
+        <Section id="live_bar_column">
+            <section id="live_bar_column_topic">Number of Rooms:</section>
+            <section id="live_bar_subcolumn">
+                <section id="singleBox">
+                    Single:0
+                </section><br>
+                <section id="doubleBox">
+                    Double:0
+                </section><br>
+                <section id="tripleBox">
+                    Triple:0
+                </section><br>
+            </section>
+        </Section>
+        <Section id="live_bar_column">
+            <section id="live_bar_column_topic">No. of Adults:</section>
+            <section id="live_bar_subcolumn">
+                <section id="localAdults">
+                    Local Adults:0
+                </section><br>
+                <section id="foreignAdults">
+                    Foreign Adults:0
+                </section><br>
+            </section>
+        </Section>
+        <Section id="live_bar_column">
+            <section id="live_bar_column_topic">No. of Children:</section>
+            <section id="live_bar_subcolumn">
+                <section id="localChildren">
+                    Local Children:0
+                </section><br>
+                <section id="foreignChildren">
+                    Foreign Children:0
+                </section><br>
+            </section>
+        </Section>
+        <Section id="live_bar_column">
+            <section id="live_bar_column_topic">No. of Participants:</section>
+            <section id="live_bar_subcolumn">
+                <section id="totalDivers">
+                    Diving:0
+                </section><br>
+                <section id="totalSafari">
+                    Safari:0
+                </section><br>
+            </section>
+        </Section>
+    </section>
+    <section id="live_bar_2">
+        <Section id="live_bar_2_column">
+            <section id="loyaltyPoints">
+            Loyalty Points:0
+            </section>
+        </Section>
+        <Section id="live_bar_2_column">
+            <section id="total">
+                Total:0
+            </section>
+        </Section>
+    </section>
+    </p>
+</body>
+<script src="hotel.js"></script>
+</html>
